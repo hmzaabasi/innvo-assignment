@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout/layout/layout.component';
 import { HomeComponent } from './components/home/home.component';
 import { UsersComponent } from './components/users/users.component';
 import { PageHeaderComponent } from './shared/page-header/page-header.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageHeaderComponent } from './shared/page-header/page-header.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
