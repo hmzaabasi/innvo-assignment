@@ -1,0 +1,32 @@
+<div class="site-header">
+    <mat-toolbar color="accent" class="p-lr-2">
+        <h1 class="site-title"><span><span>L</span>OREM</span> <span><span>I</span>PSUM</span></h1>
+        <span style="flex: 1 1 auto"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon class="material-icons-outlined">notifications_none</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+        </button>
+    </mat-toolbar>
+</div>
+<mat-sidenav-container style="height: 100%">
+    <mat-sidenav mode="side" opened style="width: 220px;">
+        <div class="sidewrapper">
+            <div class="sidebar-title">
+                <strong class="t-black">MENU</strong>
+            </div>
+            <mat-selection-list #menuItem [multiple]="false">
+                <mat-list-option *ngFor="let item of menuItems" [value]="item.name" [selected]="item.selected">
+                    <div class="side-menu-item" [routerLink]="item.path">
+                        <mat-icon>{{item.icon}}</mat-icon>
+                        <span>{{item.text}}</span>
+                    </div>
+                </mat-list-option>
+            </mat-selection-list>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
