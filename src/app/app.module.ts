@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { UsersComponent } from './components/users/users.component';
 import { PageHeaderComponent } from './shared/page-header/page-header.component';
 import { CoreModule } from './core/core.module';
+import { InfoPanelComponent } from './shared/info-panel/info-panel.component';
+import { MaterialCardComponent } from './shared/material-card/material-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CoreModule } from './core/core.module';
     LayoutComponent,
     HomeComponent,
     UsersComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    InfoPanelComponent,
+    MaterialCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<section class="cards-section">
+    <div class="info-card" *ngFor="let info of infoArry">
+        <app-material-card cardIcon="info.cardIcon" isPrimary="true">
+            <div class="count"><strong class="t-black">{{info.count}}</strong></div>
+            <div class="count-text">
+                <p>{{info.count-text}}</p>
+            </div>
+        </app-material-card>
+    </div>
+</section>

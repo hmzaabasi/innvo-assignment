@@ -8,12 +8,10 @@ import { HomepageService } from 'src/app/core/service/Homepage/homepage.service'
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private homepageService: HomepageService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.homepageService.getDashboardData().subscribe(
-      response => console.log(response),
-      err => console.log(err));
+
   }
 
 }
