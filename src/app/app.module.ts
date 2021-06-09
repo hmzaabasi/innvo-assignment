@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { HomeComponent } from './components/home/home.component';
 import { UsersComponent } from './components/users/users.component';
+import { PageHeaderComponent } from './shared/page-header/page-header.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { UsersComponent } from './components/users/users.component';
     LayoutComponent,
     HomeComponent,
     UsersComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,

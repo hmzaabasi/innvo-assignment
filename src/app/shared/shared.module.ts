@@ -6,11 +6,11 @@ import { MaterialModule } from '../shared/angular.material/material.module';
     declarations: [],
     imports: [
         CommonModule,
-        MaterialModule
+        MaterialModule,
     ],
     exports: [
         CommonModule,
-        MaterialModule
+        MaterialModule,
     ],
     providers: [],
     entryComponents: []

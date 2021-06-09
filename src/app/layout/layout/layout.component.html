@@ -17,8 +17,8 @@
                 <strong class="t-black">MENU</strong>
             </div>
             <mat-selection-list #menuItem [multiple]="false">
-                <mat-list-option *ngFor="let item of menuItems" [value]="item.name" [selected]="item.selected">
-                    <div class="side-menu-item" [routerLink]="item.path">
+                <mat-list-option *ngFor="let item of menuItems" [value]="item.name" [selected]="item.selected" [routerLink]="item.path">
+                    <div class="side-menu-item">
                         <mat-icon>{{item.icon}}</mat-icon>
                         <span>{{item.text}}</span>
                     </div>

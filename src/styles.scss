@@ -6,6 +6,15 @@ $text-color: #668094;
 body {
   background-color: $bg-color;
 }
+p {
+  margin: 0;
+}
+.t-black {
+  color: black;
+}
+.page-content {
+  padding: 10px;
+}
 .mat-list-single-selected-option
   .mat-list-item-content.mat-list-item-content-reverse {
   background-color: $primary;
@@ -25,9 +34,20 @@ mat-list-option {
   margin-left: 0 !important;
 }
 
-.t-black {
-  color: black;
-}
-p {
-  margin: 0;
+.page-title {
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 0 !important;
+  mat-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 1.1rem;
+    margin-right: 8px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 0.9rem;
+  }
 }

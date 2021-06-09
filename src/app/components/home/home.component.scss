@@ -1,38 +1,5 @@
 @import "../../../styles.scss";
 
-.page-content {
-  padding: 10px;
-  .page-header {
-    .page-description {
-      background-color: $bg-color;
-      font-size: 0.8rem;
-      padding: 1px 28px;
-      p {
-        margin: 0;
-        padding: 2px 0;
-      }
-    }
-  }
-}
-
-.page-title {
-  color: $text-color;
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-  margin: 0 !important;
-  mat-icon {
-    width: 18px;
-    height: 18px;
-    font-size: 1.1rem;
-    margin-right: 8px;
-  }
-  h2 {
-    margin: 0;
-    font-size: 0.9rem;
-  }
-}
-
 .cards-section {
   padding-top: 10px;
   display: flex;

@@ -1,0 +1,13 @@
+@import "../../../styles.scss";
+
+.page-header {
+  .page-description {
+    background-color: $bg-color;
+    font-size: 0.8rem;
+    padding: 1px 28px;
+    p {
+      margin: 0;
+      padding: 2px 0;
+    }
+  }
+}

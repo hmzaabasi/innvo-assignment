@@ -1,0 +1,13 @@
+<section class="page-header">
+    <mat-card color="accent">
+        <mat-card-header>
+            <mat-card-title class="page-title">
+                <mat-icon>{{pageIcon}}</mat-icon>
+                <h2>{{pageTitle}}</h2>
+            </mat-card-title>
+        </mat-card-header>
+        <div class="page-description" *ngIf="pageDescription">
+            <p>{{pageDescription}}</p>
+        </div>
+    </mat-card>
+</section>
