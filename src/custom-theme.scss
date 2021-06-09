@@ -1,0 +1,100 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$innvo-primary: (
+  50: #47a1f6,
+  100: #47a1f6,
+  200: #47a1f6,
+  300: #47a1f6,
+  400: #47a1f6,
+  500: #47a1f6,
+  600: #47a1f6,
+  700: #47a1f6,
+  800: #47a1f6,
+  900: #47a1f6,
+  A100: #47a1f6,
+  A200: #47a1f6,
+  A400: #47a1f6,
+  A700: #47a1f6,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  ),
+);
+
+$innvo-light: (
+  50: white,
+  100: white,
+  200: white,
+  300: white,
+  400: white,
+  500: white,
+  600: white,
+  700: white,
+  800: white,
+  900: white,
+  A100: white,
+  A200: white,
+  A400: white,
+  A700: white,
+  contrast: (
+    50: #668094,
+    100: #668094,
+    200: #668094,
+    300: #668094,
+    400: #668094,
+    500: #668094,
+    600: #668094,
+    700: #668094,
+    800: #668094,
+    900: #668094,
+    A100: #668094,
+    A200: #668094,
+    A400: #668094,
+    A700: #668094,
+  ),
+);
+
+$innvo-assignment-primary: mat-palette($innvo-primary);
+$innvo-assignment-accent: mat-palette($innvo-light);
+$innvo-assignment-warn: mat-palette($mat-red);
+
+$innvo-assignment-theme: mat-light-theme(
+  $innvo-assignment-primary,
+  $innvo-assignment-accent,
+  $innvo-assignment-warn
+);
+
+@include angular-material-theme($innvo-assignment-theme);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f0f5fb;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+strong,
+label {
+  color: #668094;
+}

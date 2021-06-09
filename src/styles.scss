@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+$primary: #47a1f6;
+$primary-contrast: white;
+$bg-color: #f0f5fb;
+$text-color: #668094;
+
+body {
+  background-color: $bg-color;
+}
+.mat-list-single-selected-option
+  .mat-list-item-content.mat-list-item-content-reverse {
+  background-color: $primary;
+  color: $primary-contrast;
+}
+.mat-list-item-content.mat-list-item-content-reverse {
+  margin: 0 8px;
+  border-radius: 5px;
+  color: $primary;
+}
+mat-list-option {
+  background-color: white !important;
+  height: 30px !important;
+}
+
+.mat-card-header-text {
+  margin-left: 0 !important;
+}
+
+.t-black {
+  color: black;
+}
+p {
+  margin: 0;
+}
